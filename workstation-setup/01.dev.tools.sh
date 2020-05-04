@@ -28,11 +28,6 @@ sudo apt-get update
 sudo apt-get install code -y -f
 rm -rf packages.microsoft.gpg
 
-echo '########## <installing themes> ##########'
-sudo apt-get install fonts-firacode -y
-sudo apt-get install fonts-powerline -y
-sudo apt-get install fonts-hack-ttf -y
-
 echo '########## <installing settings-sync extension> ##########'
 code --install-extension shan.code-settings-sync
 
@@ -43,8 +38,3 @@ wget -c https://dbeaver.io/files/7.0.1/dbeaver-ce_7.0.1_amd64.deb
 sudo dpkg -i dbeaver-ce_7.0.1_amd64.deb
 sudo apt-get install -y -f
 rm -rf dbeaver-ce_7.0.1_amd64.deb
-
-echo '########## <installing zsh spaceship> ##########'
-sudo git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH/themes/spaceship-prompt"
-sudo ln -s "$ZSH/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH/themes/spaceship.zsh-theme"
-source ~/.zshrc

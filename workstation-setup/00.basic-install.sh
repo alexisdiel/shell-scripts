@@ -47,18 +47,6 @@ sudo dpkg -i google-chrome-stable_current_amd64.deb
 
 rm -rf google-chrome-stable_current_amd64.deb
 
-echo '########## <installing zsh> ##########'
-sudo apt-get install zsh -y
-sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
-
-echo '########## <installing zsh zplugin> ##########'
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zinit/master/doc/install.sh)"
-source ~/.zshrc
-
-echo '########## <installing terminator> ##########'
-sudo apt-get update
-sudo apt-get install terminator -y  -f
-
 
 
 
