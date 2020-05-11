@@ -30,11 +30,3 @@ rm -rf packages.microsoft.gpg
 
 echo '########## <installing settings-sync extension> ##########'
 code --install-extension shan.code-settings-sync
-
-echo '########## <installing dbeaver> ##########'
-sudo apt install openjdk-11-jdk openjdk-11-jre -y -f
-java -version
-wget -c https://dbeaver.io/files/7.0.1/dbeaver-ce_7.0.1_amd64.deb
-sudo dpkg -i dbeaver-ce_7.0.1_amd64.deb
-sudo apt-get install -y -f
-rm -rf dbeaver-ce_7.0.1_amd64.deb
